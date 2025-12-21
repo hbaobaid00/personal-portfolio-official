@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" type="image/png" href="/images/cse_icon.png">
+    <script src="../js/site.js" defer></script>
+    <script src="../js/cards.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        header, nav, main, section, article, footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <my-custom-title>
+            <h1>
+                <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                    <circle cx="16" cy="16" r="14"></circle>
+                </svg>
+                My Projects
+                <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                    <circle cx="16" cy="16" r="14"></circle>
+                </svg>
+            </h1>
+        </my-custom-title>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="crud.html">Projects (CRUD)</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <select id="theme-select" class="theme-select" hidden>
+            <option value="dark">Dark Mode 🌙</option>
+            <option value="light">Light Mode ☀️</option>
+            <option value="halloween">Halloween 🎃</option>
+            <option value="christmas">Christmas 🎄</option>
+        </select>
+        <noscript>
+            <p class="noscript-note">
+            Theme switching & smooth transitions require JavaScript.
+            </p>
+        </noscript> 
+    </header>
+
+    <main>
+
+        <div class="button-group">
+            <span class="button-label">Recent Projects:</span>
+            <button id="load-local">Load Local</button>
+            <button id="reset-data">Reset Local Data</button>
+            <span class="button-label">Older Projects:</span>
+            <button id="load-remote">Load Remote</button>
+        </div>
+
+        <div id="projects">
+            <!-- <project-card
+                title="Internship: AI Agent Log Analysis"
+                img="/images/projects/ai_logs.png"
+                alt="Screenshot of AI agent logs"
+                desc="Analyzed open-source models and extracted agent logging patterns during my SkillWorld internship."
+                link="project_details/agent_logging_project.html"
+            ></project-card>
+            <project-card
+                title="Peronsal Portfolio Website"
+                img="/images/projects/myPortfolio.png"
+                alt="Homepage preview of my UCSD themed site"
+                desc="This website itself! Built using semantic HTML, CSS variables, theming, and JavaScript components."
+                link="index.html"
+            ></project-card>
+            <project-card
+                title="Mapping Music to Mood"
+                img="/images/projects/CSE158_project/graph.png"
+                desc="A regression-based analysis exploring how musical attributes reflect cultural and economic behavior."
+                link="project_details/CSE158_project.html"
+            ></project-card>
+            <project-card
+                title="Custom Computer Graphics Renderer"
+                img="/images/projects/Computer_Graphics_outputs/donut.png"
+                desc="Extended a CPU-based graphics framework with rasterization, lighting, and Blender model rendering."
+                link="project_details/computer_graphics_project.html"
+            ></project-card>
+            <project-card 
+                title="Calendar App by Quantuum Leap"
+                img="/images/projects/calendarApp.png"
+                alt="Screenshot of the Calendar App interface"
+                desc="A UCSD software engineering team project where we developed a calendar application while practicing agile workflow and version control."
+                link="https://github.com/cse110-sp24-group16/cse110-sp24-group16"
+                ></project-card>
+            <project-card 
+                title="My First Project"
+                img="/images/projects/VEX_project/robotics.jpg"
+                desc="How building a VEX robot in middle school sparked my passion for computer science and technology."
+                link="project_details/my_first_project.html"
+            ></project-card> -->
+        </div>
+        <my-hello-world></my-hello-world>
+    </main>
+    <noscript>
+        <p><strong>Note:</strong> This site works best with JavaScript enabled. Some features may not display correctly.</p>
+    </noscript>
+    <footer>
+        <p>© 2025 Hisham Baobaid • Hosted on Netlify • Validated via W3C HTML Validator</p>
+    </footer>
+</body>
+</html>

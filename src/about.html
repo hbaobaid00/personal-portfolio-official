@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/png" href="/images/cse_icon.png">
+    <script>
+        class MyHelloWorld extends HTMLElement {
+            constructor() {
+                super();
+                console.log("Hello world! (from <my-hello-world>)");
+            }
+        }
+
+        customElements.define("my-hello-world", MyHelloWorld);
+    </script>
+    <script src="../js/site.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        header, nav, main, section, article, footer {
+            /* border: 1px solid #dc3030; */
+            text-align: center;
+        } 
+        /* my-custom-title {
+            display: block;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            background-color: rgb(127, 197, 255);
+            fill: aliceblue;
+            max-width: 100%;
+        } */
+    </style>
+
+</head>
+<body>
+    <header>
+        <my-custom-title>
+            <h1>
+                <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true" role="img">
+                    <circle cx="16" cy="16" r="14"></circle>
+                </svg>
+                    About Me
+                <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true" role="img">
+                    <circle cx="16" cy="16" r="14"></circle>
+                </svg>
+            </h1>
+        </my-custom-title>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="crud.html">Projects (CRUD)</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <select id="theme-select" class="theme-select" hidden>
+            <option value="dark">Dark Mode 🌙</option>
+            <option value="light">Light Mode ☀️</option>
+            <option value="halloween">Halloween 🎃</option>
+            <option value="christmas">Christmas 🎄</option>
+        </select>
+        <noscript>
+            <p class="noscript-note">
+            Theme switching & smooth transitions require JavaScript.
+            </p>
+        </noscript> 
+    </header>
+    <main>
+        <article>
+            <h2 id="intro">Welcome to My About Page</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is where I share information about myself! This page will cover a summary of who I am, my background, my skill set, and my hobbies. </p>
+            <section id="who-am-i">
+                <h3>Who Am I?</h3>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My name is <strong>Hisham Baobaid</strong>, and I am a passionate developer with interests in web development, software engineering, and technology innovation. 
+                    I love creating projects that solve real-world problems and enhance user experiences. <br>
+                </p>
+                <section class="photos">
+                    <img src="/images/me/birthday_photo.png" alt="Picture of Hisham Baobaid on his birthday" width="300">
+                    <img src="/images/me/photoOfME.jpeg" alt="Picture of Hisham Baobaid" width="225">
+                    <img src="/images/me/photoOfMe_desert.jpeg" alt="Picture of Hisham Baobaid in the desert" width="225">
+                    <img src="/images/me/photoOfMe_balboa.jpeg" alt="Picture of Hisham Baobaid at Balboa Park" width="225">
+                </section>
+            </section>
+            <section id="background">
+                <h3>My Background</h3>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was born and raised in <em>San Diego, California</em>. I am a fourth year Computer Science student, pursuing my Bachelor of Science degree at <a href="https://ucsd.edu/">University of California, San Diego</a>. 
+                        Over the last couple of years, I have developed a strong foundation in programming, algorithms, and system design. I have worked on various projects that have honed my skills and expanded my knowledge in the tech industry.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growing up, I was always interested in technology and building new things. This curiosity led me to exploring computers and how they worked. 
+                        The first time I was introduced to programming was in middle school, where I was a part of a VEX Robotics team. This was my first ever big project where I built and programmed a robot that was responsible for completeting various tasks in a competitive environment.
+                        We programmed the motor's and sensors of the robot using VEXcode, which is based on Python. I found it particularly fascinating how lines of code could control a physical machine.
+                        From that point on, I was hooked and decided to pursue a career in technology.
+                    </p>
+                    <img class="robotImage" src="/images/projects/VEX_project/robotics.jpg" alt="Image of Robot">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Because of VEX Robotics, I decided to further my knowledge in programming by taking computer science courses in high school and college. 
+                        Fortunately, my high school offered a 3-year computer science pathway that taught me the fundamentals of programming and data structures. During my time in high school, I worked on several projects, including building simple games and web applications.
+                        These experiences solidified my passion for coding and motivated me to continue learning and growing in this field.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now, as a college student, I am constantly seeking new opportunities to expand my skill set and work on exciting projects. I even enjoy helping other students with their CSE classes as I have tutored for the <a href="https://cse.ucsd.edu/">CSE Department at UCSD</a> before. 
+                        I have helped over 500 students with their programming assignments and exam preparation, ensuring they understand the material and can apply it effectively. Helping others has a;ways been a passion of mine, and I find it incredibly rewarding to see others succeed.
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am particularly interested in <span class="highlight">web development</span> and <span class="highlight">AI agents.</span> Just recently, I finished my inernship with a startup company called SkillWorld. Our goal was to make AI Agents more efficient. I was responsible for installing and running several open-source models, and extract the log files to see what kinds of actions these agents would take.
+                        It was a wonderful experience, and I got to work with amazing people as well. Looking forward, I am eager to explore these areas further through more internships and personal projects. 
+                        I believe that technology has the power to transform lives, and I am excited to be a part of this ever-evolving industry.
+                    </p>
+            </section>
+            <section id="skills-and-expertise">
+                <h3>Skills and Expertise</h3>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Over the years, I have developed a diverse set of skills and expertise in various areas of computer science and technology. Here are some of my key skills:
+                </p>
+                <ul>
+                    <li><strong>Programming Languages:</strong> Proficient in Python, Java, JavaScript, HTML, CSS, C++, Haskell.</li>
+                    <li><strong>Web Development:</strong> Experienced in building responsive and user-friendly web applications using frameworks like React and Node.js.</li>
+                    <li><strong>Data Structures and Algorithms:</strong> Strong understanding of fundamental data structures and algorithms, with the ability to apply them to solve complex problems.</li>
+                    <li><strong>Version Control:</strong> Skilled in using Git and GitHub for version control and collaborative development.</li>
+                    <li><strong>Problem-Solving:</strong> Excellent analytical and problem-solving skills, with a keen eye for detail.</li>
+                    <li><strong>Communication:</strong> Effective communicator with experience in tutoring and mentoring fellow students.</li>
+                </ul>
+            </section>
+            <section id="hobbies-and-interests">
+                <h3>Hobbies and Interests</h3>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In my free time, I enjoy a variety of hobbies and interests that keep me engaged and inspired. Here are some of my favorite activities:
+                </p>
+                <ol>
+                    <li>
+                        <strong>Video Games:</strong> I love playing video games as they provide a great way to unwind and have fun. Some of my favorite games include "Super Smash Bros. Ultimate", "Super Mario Sunshine", "Fortnite", and "Minecraft".
+                        <section class="photos">
+                            <img src="/images/video_games/super_smash_bros.png" alt="Super Smash Bros. Ultimate" width="330">
+                            <img src="/images/video_games/super_mario_sunshine.png" alt="Super Mario Sunshine" width="200">
+                            <img src="/images/video_games/fortnite.png" alt="Fortnite" width="200">
+                            <img src="/images/video_games/minecraft.png" alt="Minecraft" width="200">
+                        </section>
+                    </li>
+                
+                    <li>
+                        <strong>Anime:</strong> I am an avid anime fan and enjoy watching series like "Naruto", "One Piece", "Demon Slayer", and "Jujutsu Kaisen". Anime offers a unique blend of storytelling, art, and culture that I find captivating.
+                        <section class="photos">
+                            <img src="/images/anime/naruto.png" alt="Naruto" width="300">
+                            <img src="/images/anime/one_piece.png" alt="One Piece" width="400">
+                            <img src="/images/anime/demon_slayer.jpg" alt="Demon Slayer" width="170">
+                            <img src="/images/anime/jujutsu_kaisen.jpg" alt="Jujutsu Kaisen" width="150">
+                        </section>
+                        <br>
+                    </li>
+                    <li>
+                        <strong>Fitness:</strong> Staying active is important to me, so I regularly go to the gym to work out. Fitness helps me maintain a healthy balance between my academic and personal life.
+                        <br>
+                    </li>
+                
+                    <li>
+                        <strong>Coding Projects:</strong> Whenever I have spare time, I like to work on personal coding projects. This allows me to experiment with new technologies and improve my programming skills.
+                        <br>
+                    </li>
+                </ol>
+            </section>
+        </article>
+
+        <my-hello-world></my-hello-world>
+
+    </main>
+    <noscript>
+        <p><strong>Note:</strong> This site works best with JavaScript enabled. Some features may not display correctly.</p>
+    </noscript>
+    <footer>
+        <p>© 2025 Hisham Baobaid • Hosted on Netlify • Validated via W3C HTML Validator</p>
+    </footer>
+</body>
+</html>

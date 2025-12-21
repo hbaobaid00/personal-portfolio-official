@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects (CRUD)</title>
+    <link rel="icon" type="image/png" href="/images/cse_icon.png">
+    <script src="../js/site.js" defer></script>
+    <script src="../js/cards.js"></script>
+    <script src="../js/crud.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        header, nav, main, section, article, footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <my-custom-title>
+            <h1>
+                <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                    <circle cx="16" cy="16" r="14"></circle>
+                </svg>
+                Projects (CRUD)
+                <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                    <circle cx="16" cy="16" r="14"></circle>
+                </svg>
+            </h1>
+        </my-custom-title>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="crud.html" aria-current="page">Projects (CRUD)</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <select id="theme-select" class="theme-select" hidden>
+            <option value="dark">Dark Mode 🌙</option>
+            <option value="light">Light Mode ☀️</option>
+            <option value="halloween">Halloween 🎃</option>
+            <option value="christmas">Christmas 🎄</option>
+        </select>
+        <noscript>
+            <p class="noscript-note">
+            Theme switching & smooth transitions require JavaScript.
+            </p>
+        </noscript> 
+    </header>
+
+    <main>
+        <!-- <div class="button-container">
+            <button id="load-local">Load Local</button>
+            <button id="load-remote">Load Remote</button>
+        </div> -->
+
+        <section>
+            <h2>Manage Local Projects</h2>
+
+            <form id="crud-form">
+                <legend>Create / Update Project</legend>
+
+                <label>Title:</label>
+                <input type="text" id="title" placeholder="Project title">
+
+                <label>Image URL:</label>
+                <input type="text" id="img" placeholder="Paste an image URL">
+
+                <label>Alt Text:</label>
+                <input type="text" id="alt" placeholder="Describe the image for accessibility">
+
+                <label>Description:</label>
+                <textarea id="desc" placeholder="Brief project summary"></textarea>
+
+                <label>Link URL:</label>
+                <input type="text" id="link" placeholder="Page or repository link">
+
+                <label>Project Index (for updates):</label>
+                <input type="number" id="index" placeholder="Leave empty for create">
+
+                <div class="button-group">
+                    <button type="submit">Save Project</button>
+                </div>
+            </form>
+
+            <form id="delete-form">
+                <legend>Delete Project</legend>
+
+                <label>Project Index:</label>
+                <input type="number" id="delete-index" required>
+                <div class="button-group">
+                    <button type="submit" id="delete-project">Delete Project</button>
+                </div>
+            </form>
+
+            <p id="info-output"></p>
+            <p id="error-output"></p>
+        </section>
+
+        <div id="deleteModal" class="modal hidden">
+            <div class="modal-content">
+                <h3>Delete Project?</h3>
+
+                <project-card id="previewCard"></project-card>
+
+                <div class="modal-actions">
+                    <button id="cancelDelete" class="btn-secondary">Cancel</button>
+                    <button id="confirmDelete" class="btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="projects">
+    
+        </div> -->
+
+        <my-hello-world></my-hello-world>
+    </main>
+    <noscript>
+        <p><strong>Note:</strong> This site works best with JavaScript enabled. Some features may not display correctly.</p>
+    </noscript>
+    <footer>
+        <p>© 2025 Hisham Baobaid • Hosted on Netlify • Validated via W3C HTML Validator</p>
+    </footer>
+</body>
+</html>

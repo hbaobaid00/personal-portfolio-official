@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping Music to Mood</title>
+    <link rel="icon" type="image/png" href="/images/cse_icon.png">
+    <script src="../../js/site.js" defer></script>
+    <script src="../js/cards.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <style>
+        header, nav, main, section, article, footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <my-custom-title>
+            <h1>
+                <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                    <circle cx="16" cy="16" r="14"></circle>
+                </svg>
+                Internship: AI Agent Log Analysis
+                <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                    <circle cx="16" cy="16" r="14"></circle>
+                </svg>
+            </h1>
+        </my-custom-title>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../crud.html">Projects (CRUD)</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <select id="theme-select" class="theme-select" hidden>
+            <option value="dark">Dark Mode 🌙</option>
+            <option value="light">Light Mode ☀️</option>
+            <option value="halloween">Halloween 🎃</option>
+            <option value="christmas">Christmas 🎄</option>
+        </select>
+        <noscript>
+            <p class="noscript-note">
+            Theme switching & smooth transitions require JavaScript.
+            </p>
+        </noscript> 
+    </header>
+
+    <main>
+        <section class="project-summary">
+            
+            <h2 class="section-title">Agent Logging & Autonomy Framework Evaluation</h2>
+
+            <p>
+                During my internship at SkillWorld, I was responsible for exploring and evaluating several autonomous agent frameworks by configuring them,
+                running task-oriented agents, and capturing detailed execution logs for analysis. Frameworks 
+                tested include Auto-GPT, MetaGPT, CrewAI, and SuperAGI—each showcasing different approaches 
+                to reasoning, coordination, tool use, and long-horizon task completion.
+            </p>
+
+            <h3>Purpose of the Work</h3>
+            <p>
+                Rather than training models or building agents from scratch, this project focuses on:
+            </p>
+            <ul class="pretty-list">
+                <li>Setting up multiple agent frameworks using Docker and Python</li>
+                <li>Configuring agents for different task profiles</li>
+                <li>Capturing and storing execution logs for comparison</li>
+                <li>Analyzing agent behavior, reasoning patterns, and tool usage</li>
+            </ul>
+
+            <h3>Frameworks Tested & Example Experiments</h3>
+
+            <h4>Auto-GPT</h4>
+            <p>
+                Deployed inside Docker to test autonomous goal pursuit and iterative reasoning loops.
+                Logged agents included a mathematical calculator task, GitHub automation behaviors, 
+                and a Discord-based agent.
+            </p>
+
+            <h4>MetaGPT</h4>
+            <p>
+                Evaluated MetaGPT's software-engineering role simulation using the prompt:
+                <em>"Write a CLI snake game."</em> Logs captured task decomposition and planning
+                output from its multi-role agent orchestration.
+            </p>
+
+            <h4>CrewAI - Trip Planner</h4>
+            <p>
+                Configured a multi-agent trip planner that generated itinerary recommendations
+                from San Diego to Switzerland. Logged versions show iterative reasoning, 
+                expert collaboration, and JSON-structured task breakdowns, ultimately recommending Interlaken.
+            </p>
+
+            <h4>SuperAGI</h4>
+            <p>
+                Used to execute a goal-driven research agent tasked with ranking top sightseeing countries
+                and emailing results. Logs document its retrieval actions, file generation, and email delivery.
+            </p>
+
+            <h3>Logging Details</h3>
+            <p>
+                For every agent, file outputs were configured to capture:
+            </p>
+            <ul class="pretty-list">
+                <li>Timestamps and tool invocations</li>
+                <li>Inter-agent dialogue where applicable</li>
+                <li>Final outputs and failure cases</li>
+                <li>Behavioral patterns observable across runs</li>
+            </ul>
+
+            <p>
+                Logs are aggregated in the project structure and used to compare autonomy frameworks,
+                debugging styles, strengths, goals, and action sequencing.
+            </p>
+            <figure class="project-figure">
+                <img src="/images/projects/ai_logs.png" alt="Screenshot of AI agent logs">
+                <figcaption>Sample log output from CrewAI trip planner showing task breakdown and reasoning steps.</figcaption>
+
+            <h3>Takeaways</h3>
+            <p>
+                This work developed familiarity with agent orchestration, task logging, developer workflows,
+                API configuration, Docker deployment, and comparing autonomous reasoning approaches across 
+                state-of-the-art systems. It provides a reference dataset for researching agent behavior
+                and tool-based cognitive loops.
+            </p>
+
+            <a href="../projects.html">Back to Project Page</a>
+            
+        </section>
+
+        <my-hello-world></my-hello-world>
+    </main>
+
+    <noscript>
+        <p><strong>Note:</strong> This site works best with JavaScript enabled. Some features may not display correctly.</p>
+    </noscript>
+
+    <footer>
+        <p>© 2025 Hisham Baobaid • Hosted on Netlify • Validated via W3C HTML Validator</p>
+    </footer>
+</body>
+</html>

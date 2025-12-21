@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping Music to Mood</title>
+    <link rel="icon" type="image/png" href="/images/cse_icon.png">
+    <script src="../../js/site.js" defer></script>
+    <script src="../js/cards.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <style>
+        header, nav, main, section, article, footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <my-custom-title>
+            <h1>
+                <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                    <circle cx="16" cy="16" r="14"></circle>
+                </svg>
+                Mapping Music to Mood
+                <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                    <circle cx="16" cy="16" r="14"></circle>
+                </svg>
+            </h1>
+        </my-custom-title>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../crud.html">Projects (CRUD)</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <select id="theme-select" class="theme-select" hidden>
+            <option value="dark">Dark Mode 🌙</option>
+            <option value="light">Light Mode ☀️</option>
+            <option value="halloween">Halloween 🎃</option>
+            <option value="christmas">Christmas 🎄</option>
+        </select>
+        <noscript>
+            <p class="noscript-note">
+            Theme switching & smooth transitions require JavaScript.
+            </p>
+        </noscript> 
+    </header>
+
+    <main>
+        <section class="project-summary">
+            
+            <h2 class="section-title">Findings & Visual Supporting Evidence</h2>
+
+            <p>
+                Through this project, I explored how musical attributes embedded in popular 
+                songs relate to trends in U.S. economic sentiment — specifically unemployment 
+                movements. Using regression analysis, I examined whether emotions and 
+                production choices in mainstream music may reflect broader cultural or 
+                economic moods.
+            </p>
+
+            <p>
+                The regression output below highlights several meaningful behavioral 
+                relationships. Musical features such as <strong>energy</strong> and 
+                <strong>danceability</strong> were positively associated with higher 
+                unemployment, suggesting that upbeat, emotionally intense songs tend to 
+                surface during periods of economic stress. Conversely, softer traits like 
+                <strong>valence</strong> (happiness) showed a negative relationship, hinting 
+                that darker cultural tones may accompany difficult periods.
+            </p>
+
+            <figure class="project-figure">
+                <img src="/images/projects/CSE158_project/ols_regression.png" alt="OLS Regression output table">
+                <figcaption>Regression output indicating directional relationships among song attributes and unemployment rates.</figcaption>
+            </figure>
+
+            <p>
+                To contextualize these patterns, I examined how missing data and song 
+                representation changed over time. The temporal histogram below captures the 
+                distribution of unavailable Spotify attributes by release year, showing spikes 
+                in certain decades. This reveals both data availability issues and how the 
+                representation of music has evolved alongside cultural shifts.
+            </p>
+
+            <figure class="project-figure">
+                <img src="/images/projects/CSE158_project/graph.png" alt="Temporal histogram of song availability">
+                <figcaption>Histogram reflecting changes in Spotify dataset coverage over time.</figcaption>
+            </figure>
+
+            <p>
+                Finally, a high-level dataset snapshot illustrates how average song features 
+                shifted from 1960-2021 — including rising tempos, evolving instrumental 
+                patterns, and decreasing acoustic presence. Together, these trends help explain 
+                why music increasingly reflects energetic but emotionally complex tones.
+            </p>
+
+            <figure class="project-figure">
+                <img src="/images/projects/CSE158_project/table.png" alt="Feature averages table">
+                <figcaption>Summary of musical feature averages across time, showing evolving production and stylistic patterns.</figcaption>
+            </figure>
+
+            <p>
+                Collectively, this work strengthened my skills in statistical inference, 
+                exploratory analysis, and narrative-based data storytelling — while deepening 
+                my appreciation for music as a cultural barometer.
+            </p>
+
+            <p>
+                <strong>Assets:</strong>
+                <br>
+                <a href="../projects.html">Back to Project Page</a> &nbsp;|
+                <a href="../../documents/cse158_project_report.pdf">View Full Report (PDF)</a> &nbsp;|
+                <a href="https://github.com/hbaobaid00/CSE158-Assignment2">Repository</a>
+            </p>
+        </section>
+
+        <my-hello-world></my-hello-world>
+    </main>
+
+    <noscript>
+        <p><strong>Note:</strong> This site works best with JavaScript enabled. Some features may not display correctly.</p>
+    </noscript>
+
+    <footer>
+        <p>© 2025 Hisham Baobaid • Hosted on Netlify • Validated via W3C HTML Validator</p>
+    </footer>
+</body>
+</html>

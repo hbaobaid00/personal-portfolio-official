@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping Music to Mood</title>
+    <link rel="icon" type="image/png" href="/images/cse_icon.png">
+    <script src="../../js/site.js" defer></script>
+    <script src="../js/cards.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <style>
+        header, nav, main, section, article, footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <my-custom-title>
+            <h1>
+                <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                    <circle cx="16" cy="16" r="14"></circle>
+                </svg>
+                Custom Computer Graphics Renderer
+                <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true">
+                    <circle cx="16" cy="16" r="14"></circle>
+                </svg>
+            </h1>
+        </my-custom-title>
+
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../crud.html">Projects (CRUD)</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <select id="theme-select" class="theme-select" hidden>
+            <option value="dark">Dark Mode 🌙</option>
+            <option value="light">Light Mode ☀️</option>
+            <option value="halloween">Halloween 🎃</option>
+            <option value="christmas">Christmas 🎄</option>
+        </select>
+        <noscript>
+            <p class="noscript-note">
+            Theme switching & smooth transitions require JavaScript.
+            </p>
+        </noscript> 
+    </header>
+
+    <main>
+        <section class="project-summary">
+            
+            <h2>Software Rasterizer & Blender Rendering Project</h2>
+
+            <p>
+                This project involved extending a provided CPU-based rendering framework to implement key components
+                of a rasterization pipeline. Across multiple homework assignments in CSE 167 (Computer Graphics),
+                I configured rendering behavior, implemented geometry shading logic, and produced shaded images
+                using models authored and exported from Blender.
+            </p>
+
+            <h3>Rendering Features Worked On</h3>
+            <ul class="pretty-list">
+                <li>Triangle rasterization and per-pixel evaluation</li>
+                <li>Barycentric interpolation for pixel depth and surface shading</li>
+                <li>CPU-side lighting evaluation using the provided Phong model utilities</li>
+                <li>Directional, point, and spotlight illumination setup</li>
+                <li>Scene configuration using starter matrix routines</li>
+                <li>Importing PLY files exported from Blender into the homework renderer</li>
+            </ul>
+
+            <p>
+                The framework supplied core mathematical utilities and loaders; my work focused on integrating scene
+                definitions, debugging shading behavior, adjusting light/material settings, and producing rendered
+                output images entirely on CPU — without GPU acceleration or OpenGL.
+            </p>
+
+            <h3>Workflow Overview</h3>
+            <p>
+                The first two objects were authored in Blender (the donut and table model), exported as PLY files, and
+                rendered using the homework rasterizer. The PLY files for the other objects were given to me by my professor.
+                I tuned light colors, shininess parameters, transformation values, and viewing configurations 
+                to develop visually distinct results.
+            </p>
+
+            <h3>Rendered Outputs</h3>
+
+            <p>
+                These outputs show successful control over geometry ingestion, illumination response, and per-pixel
+                shading — demonstrating foundational understanding of graphics pipelines used in modern engines.
+            </p>
+
+            <div class="project-figure">
+                <figure>
+                    <img src="/images/projects/Computer_Graphics_outputs/donut.png" alt="Donut render output">
+                    <figcaption>Blender donut model rendered via CPU rasterizer.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="/images/projects/Computer_Graphics_outputs/table.png" alt="Table render output">
+                    <figcaption>
+                        Additional Blender geometry rendered using tuned lighting and materials.
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <video controls width="500">
+                        <source src="/media/projects/Computer_Graphics_outputs/teapot.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Render output video of a teapot with full WASD controls for camera movement, functional flashlight, and other light effects.</figcaption>
+                </figure>
+
+                <figure>
+                    <video controls width="500">
+                        <source src="/media/projects/Computer_Graphics_outputs/spheres.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Render output video of three red spheres with full WASD controls for camera movement, functional flashlight, and other light effects.</figcaption>
+                </figure>
+                <figure>
+                    <video controls width="500">
+                        <source src="/media/projects/Computer_Graphics_outputs/bunny.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Render output video of a bunny with full WASD controls for camera movement, functional flashlight, and other light effects.</figcaption>
+                </figure>
+                <figure>
+                    <video controls width="500">
+                        <source src="/media/projects/Computer_Graphics_outputs/buddha.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Render output video of a buddha statue with full WASD controls for camera movement, functional flashlight, and other light effects.</figcaption>
+                </figure>
+                <figure>
+                    <video controls width="500">
+                        <source src="/media/projects/Computer_Graphics_outputs/donut.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>
+                        Render output video of a donut with full WASD controls for camera movement, functional flashlight, and other light effects.
+                        <br> (Note: This donut differs from the earlier static render — that version was exported as a PLY model from a Blender file I created.)
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <a href="../projects.html">Back to Project Page</a>
+        </section>
+
+        <my-hello-world></my-hello-world>
+    </main>
+
+    <noscript>
+        <p><strong>Note:</strong> This site works best with JavaScript enabled. Some features may not display correctly.</p>
+    </noscript>
+
+    <footer>
+        <p>© 2025 Hisham Baobaid • Hosted on Netlify • Validated via W3C HTML Validator</p>
+    </footer>
+</body>
+</html>
