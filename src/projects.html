@@ -34,18 +34,19 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="projects.html" aria-current="page">Projects</a></li>
-                <li><a href="crud.html">Projects (CRUD)</a></li>
                 <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <select id="theme-select" class="theme-select" hidden>
-            <option value="dark">Dark Mode 🌙</option>
-            <option value="light">Light Mode ☀️</option>
-            <option value="halloween">Halloween 🎃</option>
-            <option value="christmas">Christmas 🎄</option>
-        </select>
+        <button id="theme-toggle" class="theme-toggle" type="button">
+            <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb">
+                <span class="theme-icon">🌙</span>
+                </span>
+            </span>
+            <span class="theme-toggle-label">Dark Mode</span>
+        </button>
         <noscript>
             <p class="noscript-note">
             Theme switching & smooth transitions require JavaScript.
@@ -55,16 +56,8 @@
 
     <main>
 
-        <div class="button-group">
-            <span class="button-label">Recent Projects:</span>
-            <button id="load-local">Load Local</button>
-            <button id="reset-data">Reset Local Data</button>
-            <span class="button-label">Older Projects:</span>
-            <button id="load-remote">Load Remote</button>
-        </div>
-
         <div id="projects">
-            <!-- <project-card
+            <project-card
                 title="Internship: AI Agent Log Analysis"
                 img="/images/projects/ai_logs.png"
                 alt="Screenshot of AI agent logs"
@@ -102,7 +95,7 @@
                 img="/images/projects/VEX_project/robotics.jpg"
                 desc="How building a VEX robot in middle school sparked my passion for computer science and technology."
                 link="project_details/my_first_project.html"
-            ></project-card> -->
+            ></project-card>
         </div>
         <my-hello-world></my-hello-world>
     </main>
@@ -110,7 +103,7 @@
         <p><strong>Note:</strong> This site works best with JavaScript enabled. Some features may not display correctly.</p>
     </noscript>
     <footer>
-        <p>© 2025 Hisham Baobaid • Hosted on Netlify • Validated via W3C HTML Validator</p>
+        <p>© 2025 Hisham Baobaid • Validated via W3C HTML Validator</p>
     </footer>
 </body>
 </html>

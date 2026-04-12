@@ -22,16 +22,6 @@
             /* border: 1px solid #ccc; */
             text-align: center;
         } 
-        /* my-custom-title {
-            display: block;
-            text-align: center;
-            padding: 20px;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            background-color: rgb(127, 197, 255);
-            fill: aliceblue;
-            max-width: 100%;
-        } */
     </style>
 
 </head>
@@ -53,18 +43,19 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="crud.html">Projects (CRUD)</a></li>
                 <li><a href="resume.html" aria-current="page">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <select id="theme-select" class="theme-select" hidden>
-            <option value="dark">Dark Mode 🌙</option>
-            <option value="light">Light Mode ☀️</option>
-            <option value="halloween">Halloween 🎃</option>
-            <option value="christmas">Christmas 🎄</option>
-        </select>
+        <button id="theme-toggle" class="theme-toggle" type="button">
+            <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb">
+                <span class="theme-icon">🌙</span>
+                </span>
+            </span>
+            <span class="theme-toggle-label">Dark Mode</span>
+        </button>
         <noscript>
             <p class="noscript-note">
             Theme switching & smooth transitions require JavaScript.
@@ -87,7 +78,7 @@
         <p><strong>Note:</strong> This site works best with JavaScript enabled. Some features may not display correctly.</p>
     </noscript>
     <footer>
-        <p>© 2025 Hisham Baobaid • Hosted on Netlify • Validated via W3C HTML Validator</p>
+        <p>© 2025 Hisham Baobaid • Validated via W3C HTML Validator</p>
     </footer>
 </body>
 </html>

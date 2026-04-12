@@ -8,7 +8,7 @@ class ProjectCard extends HTMLElement {
             <style>
                 :host {
                     display: block;
-                    background: var(--bg-panel);
+                    background: linear-gradient(to bottom, var(--bg-dark) 50%, var(--accent-color) 100%);
                     padding: 1rem;
                     border-radius: 12px;
                     box-shadow: 0 0 12px var(--accent-color);
@@ -40,7 +40,7 @@ class ProjectCard extends HTMLElement {
                 }
                 a {
                     text-decoration: underline;
-                    color: var(--primary-color);
+                    color: var(--bg-dark);
                 }
                 a:hover {
                     color: var(--highlight-color);
@@ -52,7 +52,7 @@ class ProjectCard extends HTMLElement {
                 <img alt="">
             </picture>
             <p></p>
-            <a target="_blank">Read more →</a>
+            <a target="_self">Read more →</a>
         `;
     }
 

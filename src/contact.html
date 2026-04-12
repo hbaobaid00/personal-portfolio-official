@@ -33,18 +33,19 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" aria-current="page">Contact</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="crud.html">Projects (CRUD)</a></li>
                 <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
-        <select id="theme-select" class="theme-select" hidden>
-            <option value="dark">Dark Mode 🌙</option>
-            <option value="light">Light Mode ☀️</option>
-            <option value="halloween">Halloween 🎃</option>
-            <option value="christmas">Christmas 🎄</option>
-        </select>
+        <button id="theme-toggle" class="theme-toggle" type="button">
+            <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb">
+                <span class="theme-icon">🌙</span>
+                </span>
+            </span>
+            <span class="theme-toggle-label">Dark Mode</span>
+        </button>
         <noscript>
             <p class="noscript-note">
             Theme switching & smooth transitions require JavaScript.
@@ -57,15 +58,14 @@
             <h2>Reach Out</h2>
 
             <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Feel free to reach out to me using the form below! Whether you have a question, a project idea, or just want to say hello, I'm always happy to connect with new people. 
+                Feel free to reach out to me using the form below! Whether you have a question, a project idea, or just want to say hello, I'm always happy to connect with new people. 
                 I'll do my best to respond to your message as soon as possible. You can also email me directly at <a href="mailto:hishambaobaid@gmail.com">hishambaobaid@gmail.com</a> where I typically respond within 24-48 hours. 
                 You can also find my LinkedIn profile <a href="https://www.linkedin.com/in/hisham-baobaid">here</a> and my GitHub profile <a href="https://github.com/hbaobaid00">here</a>. I am looking forward to hearing from you!
             </p>
 
-            <form action="https://httpbin.org/post" method="post" novalidate>
+            <form action="https://formsubmit.co/hishambaobaid@gmail.com" method="POST" enctype="multipart/form-data" novalidate>
                 <fieldset>
                     <legend>Send Me a Message!</legend>
-                    <input type="hidden" name="possible_bot" value="true">
                     <input type="hidden" name="form-errors" id="form-errors">
                     <p>
                         <label for="name">Name:<span style="color:#ff4d4d">&nbsp;*</span></label><br>
@@ -86,23 +86,20 @@
                         <label for="msg">Message:<span style="color:#ff4d4d">&nbsp;*</span></label><br>
                         <textarea id="msg" name="comments" rows="4" cols="30" placeholder="Write message here..." required minlength="5" maxlength="500"></textarea>
                     </p>
+
                     <p id="message-counter" style="color:lightgreen; font-size:0.85rem;">
                         500 characters remaining
                     </p>
 
+                    <p>
+                        <label for="file">Attachment (5 MB or less): </label>
+                        <input id="file" type="file" name="attachment">
+                    </p>
+
                     <div class="FormCenter">
-                        <p>
-                            <label><input type="file" name="attachment"></label>
-                        </p>
+                        
 
                         <progress value="0" max="4">0%</progress>
-
-                        <p>
-                            <label>
-                                <input type="checkbox" name="subscribe" value="yes">
-                                Subscribe to updates
-                            </label>
-                        </p>
 
                         <p>
                             <button type="submit">Send</button>
@@ -122,7 +119,7 @@
     </noscript>
 
     <footer>
-        <p>© 2025 Hisham Baobaid • Hosted on Netlify • Validated via W3C HTML Validator</p>
+        <p>© 2025 Hisham Baobaid • Validated via W3C HTML Validator</p>
     </footer>
     <script src="../js/form.js"></script>
 </body>

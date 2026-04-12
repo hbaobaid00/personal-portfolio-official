@@ -25,16 +25,6 @@
             /* border: 1px solid #ccc; */
             text-align: center;
         }
-        /* my-custom-title {
-            display: block;
-            text-align: center;
-            padding: 20px;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            background-color: rgb(127, 197, 255);
-            fill: aliceblue;
-            max-width: 100%;
-        } */
     </style>
 
 </head>
@@ -56,18 +46,21 @@
             <ul>
                 <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="crud.html">Projects (CRUD)</a></li>
                 <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <select id="theme-select" class="theme-select" hidden>
-            <option value="dark">Dark Mode 🌙</option>
-            <option value="light">Light Mode ☀️</option>
-            <option value="halloween">Halloween 🎃</option>
-            <option value="christmas">Christmas 🎄</option>
-        </select>
+
+        <button id="theme-toggle" class="theme-toggle" type="button">
+            <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb">
+                <span class="theme-icon">🌙</span>
+                </span>
+            </span>
+            <span class="theme-toggle-label">Dark Mode</span>
+        </button>
+
         <noscript>
             <p class="noscript-note">
             Theme switching & smooth transitions require JavaScript.
@@ -79,18 +72,18 @@
         <article>
             <h2>Welcome to My Portfolio</h2>
             <p>
-                Hello! I'm Hisham Baobaid, a UCSD Computer Science student interested in <b>web development</b> and <i>AI agents</i>.
+                Hello! I'm Hisham Baobaid, a UCSD Computer Science student interested in <b>web development</b>, 
+                <b>AI agents</b>, <b>software engineering</b>, and <b>computer networking</b>.
             </p>
             <p>
-                This site is my first semantic HTML portfolio for CSE 134B. It emphasizes
-                <strong>structure</strong> and <em>meaning</em> over appearance. Future assignements will enhance this site.
+                This site is my first semantic HTML portfolio. It emphasizes structure and meaning over appearance.
             </p>
             <p>
                 Feel free to navigate through my site with the links above. You can learn a lot about me and contact me if you have any questions!
             </p>
             <picture>
-                <source srcset="/images/ucsd_bear.jpg" media="(min-width: 800px)" type="image/jpeg">
-                <img src="/images/ucsd_bear.jpg" alt="The UC San Diego bear statue on campus" width="400" height="300">
+                <source srcset="/images/geisel.png" media="(min-width: 800px)" type="image/jpeg">
+                <img src="/images/geisel.png" alt="The UC San Diego Geisel Library" width="400" height="300">
             </picture>
         </article>
 
@@ -101,7 +94,7 @@
         <p><strong>Note:</strong> This site works best with JavaScript enabled. Some features may not display correctly.</p>
     </noscript>
     <footer>
-    <p>© 2025 Hisham Baobaid • Hosted on Netlify • Validated via W3C HTML Validator</p>
+    <p>© 2025 Hisham Baobaid • Validated via W3C HTML Validator</p>
   </footer>
 </body>
 </html>

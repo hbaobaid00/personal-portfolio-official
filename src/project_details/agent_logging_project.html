@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapping Music to Mood</title>
+    <title>Internship: AI Agent Log Analysis</title>
     <link rel="icon" type="image/png" href="/images/cse_icon.png">
     <script src="../../js/site.js" defer></script>
     <script src="../js/cards.js"></script>
@@ -34,18 +34,19 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../about.html">About</a></li>
-                <li><a href="../contact.html">Contact</a></li>
                 <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../crud.html">Projects (CRUD)</a></li>
                 <li><a href="../resume.html">Resume</a></li>
+                <li><a href="../contact.html">Contact</a></li>
             </ul>
         </nav>
-        <select id="theme-select" class="theme-select" hidden>
-            <option value="dark">Dark Mode 🌙</option>
-            <option value="light">Light Mode ☀️</option>
-            <option value="halloween">Halloween 🎃</option>
-            <option value="christmas">Christmas 🎄</option>
-        </select>
+        <button id="theme-toggle" class="theme-toggle" type="button">
+            <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb">
+                <span class="theme-icon">🌙</span>
+                </span>
+            </span>
+            <span class="theme-toggle-label">Dark Mode</span>
+        </button>
         <noscript>
             <p class="noscript-note">
             Theme switching & smooth transitions require JavaScript.
@@ -123,6 +124,7 @@
             <figure class="project-figure">
                 <img src="/images/projects/ai_logs.png" alt="Screenshot of AI agent logs">
                 <figcaption>Sample log output from CrewAI trip planner showing task breakdown and reasoning steps.</figcaption>
+            </figure>
 
             <h3>Takeaways</h3>
             <p>
@@ -144,7 +146,7 @@
     </noscript>
 
     <footer>
-        <p>© 2025 Hisham Baobaid • Hosted on Netlify • Validated via W3C HTML Validator</p>
+        <p>© 2025 Hisham Baobaid • Validated via W3C HTML Validator</p>
     </footer>
 </body>
 </html>

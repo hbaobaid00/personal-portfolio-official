@@ -1,3 +1,6 @@
+<!-- This page is not currently linked in the main navigation. 
+Therefore, the "Projects (CRUD)" is not present in the other files' navigation menus.
+IGNORE THIS PAGE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,12 +44,20 @@
                 <li><a href="resume.html">Resume</a></li>
             </ul>
         </nav>
-        <select id="theme-select" class="theme-select" hidden>
+        <!-- <select id="theme-select" class="theme-select" hidden>
             <option value="dark">Dark Mode 🌙</option>
             <option value="light">Light Mode ☀️</option>
             <option value="halloween">Halloween 🎃</option>
             <option value="christmas">Christmas 🎄</option>
-        </select>
+        </select> -->
+        <button id="theme-toggle" class="theme-toggle" type="button">
+            <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb">
+                <span class="theme-icon">🌙</span>
+                </span>
+            </span>
+            <span class="theme-toggle-label">Dark Mode</span>
+        </button>
         <noscript>
             <p class="noscript-note">
             Theme switching & smooth transitions require JavaScript.

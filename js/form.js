@@ -107,8 +107,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    const progressEl = document.querySelector("progress");
+
     document.querySelectorAll("input, textarea").forEach(input => {
-        input.addEventListener("input", () => applyCustomMessages(input));
+        input.addEventListener("input", () => {
+            applyCustomMessages(input);
+             if (progressEl && input.required) {
+            const prevValid = input.dataset.wasValid === "true";
+            const nowValid  = input.checkValidity();
+
+            if (!prevValid && nowValid) progressEl.value++;
+            if (prevValid && !nowValid) progressEl.value--;
+
+            input.dataset.wasValid = String(nowValid);
+        }
+        });
     });
 
     form.addEventListener("submit", (e) => {
@@ -135,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (blockSubmit) {
             e.preventDefault();
             formErrorsInput.value = JSON.stringify(form_errors);
-            errorOutput.textContent = "Please correct the highlighted fields.";
+            errorOutput.textContent = "Please correct the red highlighted fields.";
             form.reportValidity();
             return;
         }
