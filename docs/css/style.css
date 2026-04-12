@@ -591,6 +591,7 @@ label {
   margin-bottom: 0.4rem;
   font-weight: 600;
   color: var(--text);
+  text-align: left;
 }
 
 input,
